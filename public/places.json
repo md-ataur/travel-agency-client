@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Seljalandsfoss Waterfall, Iceland",
+        "desc": "Seljalandsfoss is a waterfall in Iceland, located in the South Region in Iceland. The waterfall drops 60 m and is part of the Seljalands River that has its origin in the volcano glacier",
+        "days": 10,
+        "image": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGxhbmRzY2FwZXxlbnwwfHwwfA%3D%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=100"
+    },
+    {
+        "id": "2",
+        "name": "Cappadocia, Turkey",
+        "desc": "Cappadocia, a semi-arid region in central Turkey, is known for its distinctive “fairy chimneys,” tall, cone-shaped rock formations clustered in Monks Valley, Göreme and elsewhere.",
+        "days": 15,
+        "image": "https://images.unsplash.com/photo-1433838552652-f9a46b332c40?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhbmRzY2FwZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=100"
+    },
+    {
+        "id": "3",
+        "name": "Skye, United Kingdom",
+        "days": 12,
+        "desc": "The Isle of Skye, connected to Scotland's northwest coast by bridge, is known for its rugged landscapes, picturesque fishing villages and medieval castles.",
+        "image": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTZ8fGxhbmRzY2FwZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=100"
+    },
+    {
+        "id": "4",
+        "name": "Lake Atitlán, Guatemala",
+        "days": 20,
+        "desc": "Lake Atitlán is a body of water in a massive volcanic crater in Guatemala’s southwestern highlands. Ringed by steep, verdant hills, it’s known for its Mayan villages and volcanoes with striking pointed cones.",
+        "image": "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGxhbmRzY2FwZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=100"
+    },
+    {
+        "id": "5",
+        "name": "Rio de Janeiro, Brazil",
+        "days": 7,
+        "desc": "Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit.",
+        "image": "https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+    },
+    {
+        "id": "6",
+        "name": "Ontario, Canada",
+        "days": 18,
+        "desc": "Ontario is a province in east-central Canada that borders the U.S. and the Great Lakes. It's home to Ottawa, Canada's capital, known for Parliament Hill’s Victorian architecture and the National Gallery, featuring Canadian and indigenous art.",
+        "image": "https://images.unsplash.com/photo-1524467128837-00f6644866d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1156&q=80"
+    }
+]
