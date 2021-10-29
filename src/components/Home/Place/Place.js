@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Place = (props) => {
-    const { id, name, desc, days, image } = props.place;
+    const { _id, name, desc, days, image } = props.place;
 
     return (
         <div className="mx-auto group w-full shadow-2xl max-w-md pb-6 rounded-b-2xl transform duration-500 hover:-translate-y-2 cursor-pointer">
@@ -30,7 +31,7 @@ const Place = (props) => {
                 <p className="my-4 text-gray-500">{desc.slice(0, 130)}...</p>
                 <div className="flex justify-between items-center">
                     <div className="text-base uppercase font-semibold text-gray-500">{days} Days Tour</div>
-                    <button className="p-3 px-6 bg-yellow-500 hover:bg-gray-600 text-white rounded-md ">Book Now</button>
+                    <Link to={`booking/${_id}, ${name}`}><button className="p-3 px-6 bg-yellow-500 hover:bg-gray-600 text-white rounded-md ">Book Now</button></Link>
                 </div>
             </div>
         </div>

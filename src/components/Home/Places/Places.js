@@ -3,11 +3,15 @@ import Place from '../Place/Place';
 
 const Places = () => {
     const [places, setPlaces] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('../places.json')
+        fetch('http://localhost:5000/places')
             .then(res => res.json())
             .then(data => setPlaces(data))
+            .finally(() => {
+                setLoading(false);
+            })
     }, []);
 
     return (
@@ -41,11 +45,23 @@ const Places = () => {
             </div>
             <div className="mb-10 md:mb-20">
                 <h1 className="mb-10 text-4xl font-medium text-gray-700">Top Destinations</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
-                    {
-                        places.map(place => <Place key={place.id} place={place}></Place>)
-                    }
-                </div>
+                {loading ?
+                    <div className="text-center py-10 mb-20 flex justify-around">
+                        <button type="button" className="inline-flex items-center rounded text-lg text-white bg-gray-600 py-2 px-4" disabled>
+                            <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            Loading
+                        </button>
+                    </div>
+                    :
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+                        {
+                            places.map(place => <Place key={place._id} place={place}></Place>)
+                        }
+                    </div>
+                }
             </div>
             <div className="bg-gray-100 py-10 px-6 rounded">
                 <div className="w-full md:max-w-4xl m-auto md:flex justify-between items-center">
@@ -59,8 +75,8 @@ const Places = () => {
                         </div>
                     </div>
                     <div>
-                        <input className="border-0 rounded-l-md focus:outline-none w-8/12 md:w-96 px-3 py-4" type="text" placeholder="Your Email" />
-                        <button className="py-4 px-6 -m-2 bg-gray-600 hover:bg-gray-700 rounded-r-md text-white">Subscribe</button>
+                        <input className="border-0 rounded-l-md focus:outline-none w-8/12 md:w-96 px-3 py-3" type="text" placeholder="Your Email" />
+                        <button className="bg-gray-600 hover:bg-gray-700 rounded-r-md text-white py-3 px-4 -m-2">Subscribe</button>
                     </div>
                 </div>
             </div>

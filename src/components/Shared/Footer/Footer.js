@@ -30,7 +30,7 @@ const Footer = () => {
                     <ul>
                         <li><a href="#">My Account</a></li>
                         <li><a href="#">My Events</a></li>
-                        <li><a href="#">Your History</a></li>
+                        <li><a href="#">My History</a></li>
                         <li><a href="#">Create Account</a></li>
                     </ul>
                 </div>

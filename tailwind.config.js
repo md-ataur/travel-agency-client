@@ -13,7 +13,7 @@ module.exports = {
       width: ["group-hover", "hover"],
       height: ["group-hover", "hover"],
       padding: ["group-hover", "hover"],
-      animation: ["group-hover", "hover"],
+      animation: ["group-hover", "hover", "responsive", "motion-safe", "motion-reduce"],
       scale: ["group-hover", "hover"],
     },
   },

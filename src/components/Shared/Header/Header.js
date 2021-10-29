@@ -16,8 +16,14 @@ const Header = () => {
             <div className="nav-menu my-2 md:my-0">
                 <ul className="text-center md:text-left">
                     <li className="hover:text-yellow-600 font-medium text-gray-700 mr-4 mb-2 md:mb-0 md:mr-8"><Link to="/">HOME</Link></li>
-                    <li className="hover:text-yellow-600 font-medium text-gray-700 mr-4 mb-2 md:mb-0 md:mr-8"><Link to="/places">PLACES</Link></li>
-                    <li className="hover:text-yellow-600 font-medium text-gray-700 mr-4 mb-2 md:mb-0 md:mr-10"><Link to="#">BLOG</Link></li>
+                    <li className="hover:text-yellow-600 font-medium text-gray-700 mr-4 mb-2 md:mb-0 md:mr-8"><Link to="#">ABOUT US</Link></li>
+                    {user?.email &&
+                        <span>
+                            <li className="hover:text-yellow-600 font-medium text-gray-700 mr-4 mb-2 md:mb-0 md:mr-8"><Link to="/mybooking">MY BOOKING</Link></li>
+                            <li className="hover:text-yellow-600 font-medium text-gray-700 mr-4 mb-2 md:mb-0 md:mr-8"><Link to="/addtourism">ADD TOURISM</Link></li>
+                            <li className="hover:text-yellow-600 font-medium text-gray-700 mr-4 mb-2 md:mb-0 md:mr-8"><Link to="/managebooking">MANAGE BOOKING</Link></li>
+                        </span>
+                    }
                     <li className="bg-yellow-500 hover:bg-gray-600 text-white rounded py-2 px-6 mr-2">
                         {user?.email ?
                             <button onClick={logout}>LOGOUT</button>
