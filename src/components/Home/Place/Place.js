@@ -31,7 +31,7 @@ const Place = (props) => {
                 <p className="my-4 text-gray-500">{desc.slice(0, 130)}...</p>
                 <div className="flex justify-between items-center">
                     <div className="text-base uppercase font-semibold text-gray-500">{days} Days Tour</div>
-                    <Link to={`booking/${_id}, ${name}`}><button className="p-3 px-6 bg-yellow-500 hover:bg-gray-600 text-white rounded-md ">Book Now</button></Link>
+                    <Link to={`booking/${_id}, ${name}`}><button className="p-3 px-6 bg-yellow-500 hover:bg-gray-600 text-white font-medium rounded-md ">Book Now</button></Link>
                 </div>
             </div>
         </div>
