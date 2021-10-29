@@ -11,13 +11,13 @@ const Booking = () => {
     const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/places/${id}`)
+        fetch(`https://secret-wildwood-94686.herokuapp.com/places/${id}`)
             .then(res => res.json())
             .then(data => setTourism(data))
     }, []);
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/tourists', {
+        fetch('https://secret-wildwood-94686.herokuapp.com/tourists', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -30,22 +30,21 @@ const Booking = () => {
                     alert('Successfully Registered');
                     reset();
                 }
-                console.log(data);
             })
     }
 
     return (
         <div>
-            {/* <div className="header-img flex justify-center items-center"></div> */}
-            <div className="w-full lg:w-11/12 xl:w-10/12 m-auto pt-20 px-4 grid grid-cols-2">
+            <div className="header-img flex justify-center items-center"></div>
+            <div className="w-full lg:w-11/12 xl:w-10/12 m-auto pt-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="max-w-xl">
-                    <h3 className="text-3xl text-center font-medium text-gray-700 mb-8"><h3>{tourism?.name}</h3></h3>
+                    <h3 className="text-3xl text-center font-medium text-gray-700 mb-8">{tourism?.name}</h3>
                     <img src={tourism?.image} alt="" />
                     <p className="text-gray-600 my-2">{tourism?.desc}</p>
-                    <p>{tourism?.days} Days</p>
+                    <p className="text-lg text-gray-600">{tourism?.days} Days Tour</p>
                 </div>
                 <div className="max-w-xl">
-                    <h3 className="text-3xl text-center font-medium text-gray-700 mb-8">Please Register</h3>
+                    <h3 className="text-3xl text-center font-medium text-gray-700 mb-8">Booking Registration</h3>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="mb-4">
                             <input {...register("name", { required: true })} defaultValue={user?.displayName || ""} className="bg-blue-100 w-full rounded focus:outline-none py-3 px-3 text-gray-600" placeholder="Name" />
@@ -69,8 +68,9 @@ const Booking = () => {
                         <div className="mb-4">
                             <textarea {...register("address")} className="bg-blue-100 w-full rounded focus:outline-none py-3 px-3 text-gray-600" placeholder="Address" cols="30" rows="3"></textarea>
                         </div>
+                        <input type="hidden" {...register("status", {})} defaultValue={"Pending"} />
                         <div className="mb-4">
-                            <button type="submit" className="bg-gray-600 hover:bg-gray-700 w-full rounded font-medium text-white text-center py-3 px-3">Register</button>
+                            <button type="submit" className="bg-gray-600 hover:bg-gray-700 w-full rounded font-medium text-white text-center py-3 px-3">Booking</button>
                         </div>
                     </form>
                 </div>

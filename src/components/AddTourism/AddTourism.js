@@ -5,7 +5,7 @@ const AddTourism = () => {
     const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        fetch(`http://localhost:5000/places`, {
+        fetch(`https://secret-wildwood-94686.herokuapp.com/places`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -24,7 +24,7 @@ const AddTourism = () => {
 
     return (
         <div>
-            <div className="max-w-sm m-auto pt-8 pb-4">
+            <div className="max-w-sm m-auto pt-8 pb-4 px-4">
                 <h3 className="text-3xl text-center font-medium text-gray-700 mt-4 mb-8">Add New Tourism</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-4">

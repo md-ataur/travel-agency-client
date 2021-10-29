@@ -6,7 +6,7 @@ const Places = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/places')
+        fetch('https://secret-wildwood-94686.herokuapp.com/places')
             .then(res => res.json())
             .then(data => setPlaces(data))
             .finally(() => {
