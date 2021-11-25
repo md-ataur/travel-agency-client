@@ -9,7 +9,7 @@ const Header = () => {
     const { user, logout } = useAuth();
 
     return (
-        <div className="w-full lg:w-11/12 xl:w-10/12 m-auto py-4 px-4 md:flex justify-between items-center">
+        <div className="max-w-7xl m-auto py-4 px-4 md:flex justify-between items-center">
             <div className="m-auto w-60 md:m-0">
                 <Link to="/"><img src={logo} alt="" /></Link>
             </div>

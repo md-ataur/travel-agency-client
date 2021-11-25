@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className="footer pt-10 md:pt-20 mt-10 md:mt-20">
+        <div className="footer-bar pt-10 md:pt-20 mt-10 md:mt-20">
             <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-x-10 gap-y-4 mb-6 md:mb-10 text-center md:text-left">
                 <div className="footer-nav">
                     <h4>Travel Agency</h4>

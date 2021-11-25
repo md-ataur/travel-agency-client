@@ -15,8 +15,8 @@ const Places = () => {
     }, []);
 
     return (
-        <div className="w-full lg:w-11/12 xl:w-10/12 m-auto px-4">
-            <div className="container mx-auto py-10 md:py-20 ">
+        <div className="max-w-7xl m-auto px-4">
+            <div className="py-10 md:py-20 ">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
                     <div className="p-10 min-h-100 max-w-xl w-full rounded-xl text-gray-100 transform duration-500 hover:-translate-y-1 cursor-pointer" style={{ backgroundImage: "url(" + `https://images.unsplash.com/photo-1515615791787-d8e0022e233f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80` + ")" }}>
                         <h1 className="mt-5 text-3xl text-gray-100 leading-snug min-h-33">Discover Chicago by Yacht, not Junk!

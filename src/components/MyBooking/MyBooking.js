@@ -39,7 +39,7 @@ const MyBooking = () => {
 
 
     return (
-        <div className="w-full lg:w-11/12 xl:w-10/12 m-auto py-3 px-4">
+        <div className="max-w-7xl m-auto py-3 px-4">
             <h3 className="text-3xl text-center font-medium text-gray-700 mt-8 mb-10">My Booking List</h3>
             <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

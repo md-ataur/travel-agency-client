@@ -36,7 +36,7 @@ const Booking = () => {
     return (
         <div>
             <div className="header-img flex justify-center items-center"></div>
-            <div className="w-full lg:w-11/12 xl:w-10/12 m-auto pt-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="max-w-7xl m-auto pt-10 px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="max-w-xl">
                     <h3 className="text-3xl text-center font-medium text-gray-700 mb-8">{tourism?.name}</h3>
                     <img src={tourism?.image} alt="" />

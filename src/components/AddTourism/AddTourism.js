@@ -18,7 +18,7 @@ const AddTourism = () => {
                     alert('Successfully Added');
                     reset();
                 }
-                console.log(data);
+                // console.log(data);
             })
     }
 
